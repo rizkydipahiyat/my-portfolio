@@ -19,7 +19,7 @@ export default function Home() {
         <div className="md:w-1/2 md:mt-32 md:mb-40 mt-5">
           <div className="relative md:flex md:flex-col">
             <span className="text-2xl md:text-4xl font-medium">
-              Hello, I'm
+              Hello, I&apos;m
               <br />
             </span>
             <span className="text-2xl md:text-4xl font-medium">
