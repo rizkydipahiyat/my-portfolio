@@ -6,7 +6,7 @@ const CollabCard = () => {
     <div className="flex flex-col md:flex-row md:justify-between md:py-5 md:mb-20">
       <div className="flex flex-col w-full mb-5 md:w-1/4">
         <span className="md:text-lg text-md font-medium md:font-semibold text-justify">
-          I would be happy to, if you'd like to collaborate on your next
+          I would be happy to, if you&apos;d like to collaborate on your next
         </span>
         <div className="flex items-center md:gap-x-2">
           <span className="md:text-lg md:font-semibold text-md font-medium text-justify">

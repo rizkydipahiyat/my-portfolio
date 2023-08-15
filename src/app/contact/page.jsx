@@ -18,11 +18,11 @@ const Contact = () => {
           className={`${
             theme === "light" ? "bg-zinc-600" : "bg-zinc-200  "
           } md:w-1/2 flex flex-col px-4 py-5 text-2xl md:text-4xl gap-y-2 font-semibold rounded-lg md:px-7 md:py-5`}>
-          <span>Let{"'"}s chat.</span>
+          <span>Let&apos;s chat.</span>
           <span>Tell me about your</span>
           <span>project.</span>
           <span className="text-sm font-normal mt-5">
-            Let{"'"}s create something together👋
+            Let&apos;s create something together👋
           </span>
         </div>
         <div className="md:w-1/2 items-center md:px-10">
