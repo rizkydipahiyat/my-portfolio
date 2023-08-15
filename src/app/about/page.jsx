@@ -21,7 +21,7 @@ const About = () => {
         <div className="md:w-1/2 md:mt-20 md:mb-40">
           <div className="relative flex flex-col">
             <span className="md:text-4xl text-lg font-medium">
-              Hi, I'm Rizky
+              Hi, I&apos;m Rizky
             </span>
             <span className="md:text-4xl text-lg font-medium">
               Dipahiyat Alghipari, Frontend
