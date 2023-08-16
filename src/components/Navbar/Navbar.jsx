@@ -31,8 +31,8 @@ const Navbar = () => {
       <div
         className={
           theme === "light"
-            ? "bg-zinc-800 text-zinc-100 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-10 md:py-5"
-            : "bg-zinc-100 text-slate-800 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-10 md:py-5"
+            ? "bg-zinc-800 text-zinc-100 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-20 md:py-5"
+            : "bg-zinc-100 text-slate-800 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-20 md:py-5"
         }>
         <nav className="flex items-center justify-between">
           <Link href="/">

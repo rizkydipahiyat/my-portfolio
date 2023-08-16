@@ -10,8 +10,8 @@ const Contact = () => {
     <div
       className={
         theme === "light"
-          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-10 md:py-5 h-[500px] md:h-screen"
-          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-10 md:py-5 h-[500px] md:h-screen"
+          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5 h-[500px] md:h-screen"
+          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5 h-[500px] md:h-screen"
       }>
       <div className="flex flex-col gap-y-5 mt-20 md:flex-row md:justify-between md:px-10 md:mt-32 md:mb-10">
         <div
