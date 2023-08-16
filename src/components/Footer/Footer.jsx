@@ -12,8 +12,8 @@ const Footer = () => {
     <div
       className={
         theme === "light"
-          ? "bg-zinc-800 text-zinc-100 container w-full px-3 md:py-5 mx-auto h-[100px]"
-          : "bg-zinc-100 text-slate-800 container w-full px-3 md:py-5 mx-auto h-[100px]"
+          ? "bg-zinc-800 text-zinc-100 container w-full px-3 md:py-5 md:max-w-full mx-auto h-[100px]"
+          : "bg-zinc-100 text-slate-800 container w-full px-3 md:py-5 md:max-w-full mx-auto h-[100px]"
       }>
       <div className="flex flex-col md:flex-row md:px-7 gap-y-4 md:justify-between">
         <div className="md:font-bold md:text-lg">

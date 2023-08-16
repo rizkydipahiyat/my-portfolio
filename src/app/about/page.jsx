@@ -14,8 +14,8 @@ const About = () => {
     <div
       className={
         theme === "light"
-          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:px-10 md:py-5"
-          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:px-10 md:py-5"
+          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-10 md:py-5"
+          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-10 md:py-5"
       }>
       <div className="flex flex-col-reverse md:flex-row md:items-center">
         <div className="md:w-1/2 md:mt-20 md:mb-40">
@@ -44,7 +44,7 @@ const About = () => {
             <SkillCard />
           </div>
         </div>
-        <div className="md:w-2/3 md:mt-10 md:px-20 mb-40">
+        <div className="md:w-2/4 md:mt-10 md:px-20 mb-40">
           <div className="relative md:px-5 text-center">
             <Image
               src={Profile}
@@ -52,7 +52,7 @@ const About = () => {
               width={0}
               height={0}
               sizes="100vh"
-              className="absolute md:top-20 md:right-[3rem] md:w-[400px] md:h-[400px]"
+              className="absolute md:top-20 md:right-[4rem] md:w-[400px] md:h-[400px]"
             />
             <svg
               className="w-[300px] h-[300px] md:w-[550px] md:h-[550px] "

@@ -31,8 +31,8 @@ const Navbar = () => {
       <div
         className={
           theme === "light"
-            ? "bg-zinc-800 text-zinc-100 container mx-auto w-full px-3 py-5 top-0 sticky z-10 md:container md:px-10 md:py-5"
-            : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 top-0 sticky z-10 md:container md:px-10 md:py-5"
+            ? "bg-zinc-800 text-zinc-100 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-10 md:py-5"
+            : "bg-zinc-100 text-slate-800 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-10 md:py-5"
         }>
         <nav className="flex items-center justify-between">
           <Link href="/">
@@ -84,7 +84,7 @@ const Navbar = () => {
               theme === "light"
                 ? "bg-zinc-700 text-zinc-100"
                 : "bg-zinc-100 text-slate-700"
-            } absolute md:hidden w-[200px] px-3 py-6 right-0 rounded-br-lg rounded-bl-lg z-[1000]`}>
+            } absolute md:hidden w-[200px] px-3 py-6 right-0 rounded-br-lg rounded-bl-lg z-[1000] top-0`}>
             <ul className="flex flex-col items-center gap-y-5 font-normal text-md">
               {menu.map((item, index) => {
                 return (
