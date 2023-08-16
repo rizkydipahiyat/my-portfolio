@@ -20,7 +20,12 @@ const CollabCard = () => {
           mailto: <a href="mailto:rizkydipahiyat76@gmail.com">rizkydipahiyat</a>
         </span>
         <div className="font-normal text-md cursor-pointer">
-          <span className="border-b-2">View Curriculum Vitae</span>
+          <a
+            href="https://resume.io/r/x2ka8epI1"
+            target="blank"
+            className="border-b-2">
+            View Curriculum Vitae
+          </a>
         </div>
       </div>
     </div>
