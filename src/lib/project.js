@@ -9,7 +9,7 @@ const Projects = [
     title: "Quran Digital",
     image: Quran,
     url: "https://quran-theta.vercel.app",
-    desc: "Quran Digital merupakan platform interaktif yang menggabungkan ajaran Al-Quran dengan teknologi modern. Dibangun menggunakan ReactJS, Bootstrap, dan REST API, platform responsif ini memudahkan pengguna untuk menjelajahi dan memahami Al-Quran melalui antarmuka yang menarik dan fitur pencarian yang efisien.",
+    desc: "Quran Digital merupakan platform interaktif yang menggabungkan ajaran Al-Quran dengan teknologi modern. Dibangun menggunakan ReactJS, Bootstrap, dan REST API.",
     stack: ["ReactJS", "Bootstrap", "Rest API"],
   },
   {
@@ -17,7 +17,7 @@ const Projects = [
     title: "Animax+",
     image: Animax,
     url: "https://animaxplus.vercel.app/",
-    desc: "Animax+ merupakan sebuah platform streaming. Menggunakan teknologi Next.js, Express.js, MongoDB, Tailwind CSS, dan REST API, kami menyediakan pengalaman streaming yang lancar dan tampilan menarik, sambil memungkinkan fitur-fitur seperti pencarian dan penjelajahan anime yang mudah diakses.",
+    desc: "Animax+ merupakan sebuah platform streaming. Menggunakan teknologi Next.js, Express.js, MongoDB, Tailwind CSS, dan REST API, Animax+ menyediakan pengalaman streaming yang lancar dan tampilan menarik, sambil memungkinkan fitur-fitur seperti pencarian dan penjelajahan anime yang mudah diakses.",
     stack: ["NextJs", "ExpressJS", "MongoDB", "TailwindCSS"],
   },
   {
@@ -25,7 +25,7 @@ const Projects = [
     title: "Nimazenext",
     image: Nimaze,
     url: "https://nimazenext.vercel.app/",
-    desc: "Nimazenext merupakan aplikasi hasil scraping dari website layanan streaming. Menggunakan teknologi Next.js, Cheerio.js, Tailwind CSS, dan REST API, Nimazenext menyediakan pengalaman streaming yang lancar dan tampilan menarik, dan memungkinkan fitur-fitur seperti pencarian dan penjelajahan anime yang mudah diakses.",
+    desc: "Nimazenext merupakan aplikasi hasil scraping dari website layanan streaming yang telah dijadikan sebuah Rest API. Menggunakan teknologi Next.js, Cheerio.js, Tailwind CSS, dan REST API, Nimazenext menyediakan pengalaman streaming yang lancar dan tampilan menarik, dan memungkinkan fitur-fitur seperti pencarian dan penjelajahan anime yang mudah diakses.",
     stack: ["NextJs", "Cheerio", "TailwindCSS", "Rest API"],
   },
   {
