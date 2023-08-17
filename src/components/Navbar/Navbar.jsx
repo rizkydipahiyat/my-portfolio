@@ -1,12 +1,6 @@
 "use client";
 
-import React, {
-  Fragment,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import React, { Fragment, useContext, useState } from "react";
 import {
   IoPartlySunnyOutline,
   IoCloudyNight,
@@ -20,14 +14,19 @@ import menu from "@/lib/menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState("");
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleMenuActive = (pathname) => {
+    setCurrentPage(pathname.id);
+  };
+
   return (
-    <>
+    <div className="top-0 sticky z-10">
       <div
         className={
           theme === "light"
@@ -61,7 +60,14 @@ const Navbar = () => {
                 return (
                   <Fragment key={item.id}>
                     <li className="cursor-pointer">
-                      <Link href={`${item.pathname}`}>{item.title}</Link>
+                      <Link
+                        href={`${item.pathname}`}
+                        onClick={() => handleMenuActive(item, item.id)}
+                        className={`${
+                          currentPage === item.id ? "underline" : ""
+                        }`}>
+                        {item.title}
+                      </Link>
                     </li>
                   </Fragment>
                 );
@@ -104,7 +110,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { DarkModeProvider } from "@/context/DarkModeContext";
 import Footer from "@/components/Footer/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <DarkModeProvider>
+          <NextTopLoader color="#4cd137" showSpinner={false} />
           <Navbar />
           {children}
           <Footer />
