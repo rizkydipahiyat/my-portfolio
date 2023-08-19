@@ -10,11 +10,11 @@ export default function Home() {
   const { theme } = useContext(DarkModeContext);
   return (
     <div
-      className={
+      className={`${
         theme === "light"
-          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5"
-          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5"
-      }>
+          ? "bg-zinc-800 text-slate-100"
+          : "bg-zinc-100 text-slate-800"
+      } container mx-auto max-w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5`}>
       <div className="md:flex items-center md:h-[25rem] h-[15rem]">
         <div className="md:w-1/2 md:mt-32 md:mb-40 mt-5">
           <div className="relative md:flex md:flex-col">

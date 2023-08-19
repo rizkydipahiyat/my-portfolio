@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <DarkModeProvider>
           <NextTopLoader color="#4cd137" showSpinner={false} />
+          {/* <Navbar /> */}
           <Navbar />
           {children}
           <Footer />

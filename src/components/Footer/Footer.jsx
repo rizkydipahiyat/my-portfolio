@@ -10,11 +10,11 @@ const Footer = () => {
   const { theme } = useContext(DarkModeContext);
   return (
     <div
-      className={
+      className={`${
         theme === "light"
-          ? "bg-zinc-800 text-zinc-100 container w-full px-3 md:py-5 md:max-w-full mx-auto h-[200px]"
-          : "bg-zinc-100 text-slate-800 container  w-full px-3 md:py-5 md:max-w-full mx-auto h-[200px]"
-      }>
+          ? "bg-zinc-800 text-zinc-100"
+          : "bg-zinc-100 text-slate-800"
+      } container max-w-full px-3 md:max-w-full md:py-3 md:px-12 mx-auto h-[200px]`}>
       <div className="flex flex-col md:flex-row md:px-7 gap-y-4 md:justify-between">
         <div className="mt-10 md:font-bold md:text-lg">
           Rizky Dipahiyat Alghipari - 2023

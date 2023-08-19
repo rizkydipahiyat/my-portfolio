@@ -12,11 +12,11 @@ const About = () => {
   const { theme } = useContext(DarkModeContext);
   return (
     <div
-      className={
+      className={`${
         theme === "light"
-          ? "bg-zinc-800 text-slate-100 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5"
-          : "bg-zinc-100 text-slate-800 container mx-auto w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5"
-      }>
+          ? "bg-zinc-800 text-slate-100"
+          : "bg-zinc-100 text-slate-800"
+      } container mx-auto max-w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5`}>
       <div className="flex flex-col-reverse md:flex-row md:items-center">
         <div className="md:w-1/2 md:mt-20 md:mb-40">
           <div className="relative flex flex-col">

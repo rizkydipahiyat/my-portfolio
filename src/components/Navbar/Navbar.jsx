@@ -13,9 +13,9 @@ import Link from "next/link";
 import menu from "@/lib/menu";
 
 const Navbar = () => {
+  const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("");
-  const { theme, toggleDarkMode } = useContext(DarkModeContext);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,91 +26,66 @@ const Navbar = () => {
   };
 
   return (
-    <div className="top-0 sticky z-10">
-      <div
-        className={
-          theme === "light"
-            ? "bg-zinc-800 text-zinc-100 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-20 md:py-5"
-            : "bg-zinc-100 text-slate-800 container mx-auto w-full px-5 py-5 top-0 sticky z-10 md:container md:max-w-full md:px-20 md:py-5"
-        }>
-        <nav className="flex items-center justify-between">
-          <Link href="/">
-            <div className="logo flex items-center gap-x-2">
-              <h2 className="text-md font-medium">RizkyDev</h2>
-              <VscCode size={28} />
-            </div>
-          </Link>
-          <div className="menu md:hidden lg:hidden flex items-center gap-x-3">
-            <span className="cursor-pointer" onClick={toggleDarkMode}>
-              {theme === "light" ? (
-                <IoPartlySunnyOutline className="-mt-1" size={28} />
-              ) : (
-                <IoCloudyNight className="-mt-1" size={28} />
-              )}
-            </span>
+    <nav
+      className={`${
+        theme === "light"
+          ? "bg-zinc-800 text-zinc-100"
+          : "bg-zinc-100 text-slate-800"
+      } flex items-center justify-between container mx-auto max-w-full h-[70px] top-0 sticky z-10 px-5 md:px-20`}>
+      <Link href="/">
+        <div className="flex items-center gap-x-2">
+          <h2 className="text-xl md:text-2xl font-bold">T</h2>
+          <VscCode size={24} />
+        </div>
+      </Link>
+      <div className="flex items-center gap-x-3">
+        <div className="text-md md:text-lg font-normal">
+          <ul
+            className={`${
+              theme === "light"
+                ? "bg-zinc-800 text-zinc-100"
+                : "bg-zinc-100 text-slate-800"
+            } ${
+              isOpen ? "right-0" : "-right-[300px]"
+            } flex flex-col justify-start fixed gap-y-5 py-8 rounded-bl-lg rounded-br-lg top-[70px] w-[200px] items-center transition-all duration-300 ease-in-out md:flex-row md:items-center md:gap-x-3 md:top-0 md:right-0 md:mr-[130px] md:py-5 md:transition-none`}>
+            {menu.map((item) => {
+              return (
+                <Fragment key={item.id}>
+                  <li className="cursor-pointer">
+                    <Link
+                      onClick={() => handleMenuActive(item, item.id)}
+                      className={`${
+                        currentPage === item.id ? "font-bold" : ""
+                      }`}
+                      href={`${item.pathname}`}>
+                      {item.title}
+                    </Link>
+                  </li>
+                </Fragment>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="md:-mt-2">
+          <span>
+            {theme === "light" ? (
+              <IoPartlySunnyOutline size={28} onClick={toggleDarkMode} />
+            ) : (
+              <IoCloudyNight size={28} onClick={toggleDarkMode} />
+            )}
+          </span>
+        </div>
+        <div className="mt-1 block md:hidden">
+          <span>
             {isOpen ? (
               <IoCloseOutline size={28} onClick={handleMenu} />
             ) : (
               <IoMenuOutline size={28} onClick={handleMenu} />
             )}
-          </div>
-          <div className="menuList hidden md:flex items-center justify-end">
-            <ul className="flex items-center gap-x-6 font-normal text-md">
-              {menu.map((item) => {
-                return (
-                  <Fragment key={item.id}>
-                    <li className="cursor-pointer">
-                      <Link
-                        href={`${item.pathname}`}
-                        onClick={() => handleMenuActive(item, item.id)}
-                        className={`${
-                          currentPage === item.id ? "underline" : ""
-                        }`}>
-                        {item.title}
-                      </Link>
-                    </li>
-                  </Fragment>
-                );
-              })}
-              <li className="cursor-pointer" onClick={toggleDarkMode}>
-                {theme === "light" ? (
-                  <IoPartlySunnyOutline className="-mt-1" size={28} />
-                ) : (
-                  <IoCloudyNight className="-mt-1" size={28} />
-                )}
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      {isOpen && (
-        <div className="relative">
-          <div
-            className={`${
-              theme === "light"
-                ? "bg-zinc-700 text-zinc-100"
-                : "bg-zinc-100 text-slate-700"
-            } absolute md:hidden w-[200px] px-3 py-6 right-0 rounded-br-lg rounded-bl-lg z-[1000] top-0`}>
-            <ul className="flex flex-col items-center gap-y-5 font-normal text-md">
-              {menu.map((item, index) => {
-                return (
-                  <Fragment key={index}>
-                    <li
-                      className={`${
-                        theme === "light"
-                          ? "hover:bg-zinc-600"
-                          : "hover:bg-slate-300"
-                      } cursor-pointer w-full text-center p-2`}>
-                      <Link href={`${item.pathname}`}>{item.title}</Link>
-                    </li>
-                  </Fragment>
-                );
-              })}
-            </ul>
-          </div>
+          </span>
         </div>
-      )}
-    </div>
+      </div>
+    </nav>
   );
 };
 
