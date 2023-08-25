@@ -1,7 +1,7 @@
-import Quran from "@/assets/quranapp.png";
-import Animax from "@/assets/animaxplus.png";
-import Nimaze from "@/assets/nimaze.png";
-import Fashion from "@/assets/fashion-shop.png";
+import Quran from "@/assets/quranapp.webp";
+import Animax from "@/assets/animaxplus.webp";
+import Nimaze from "@/assets/nimaze.webp";
+import Fashion from "@/assets/fashion-shop.webp";
 
 const Projects = [
   {

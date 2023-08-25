@@ -2,7 +2,7 @@
 
 import { DarkModeContext } from "@/context/DarkModeContext";
 import React, { useContext } from "react";
-import Profile from "@/assets/photo.png";
+import Profile from "@/assets/photo.webp";
 import Image from "next/image";
 import SkillCard from "@/components/SkillCard/SkillCard";
 import SkillSoftwareCard from "@/components/SkillSoftwareCard/SkillSoftwareCard";
