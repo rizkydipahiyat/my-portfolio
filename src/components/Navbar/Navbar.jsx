@@ -15,7 +15,7 @@ import menu from "@/lib/menu";
 const Navbar = () => {
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -52,13 +52,14 @@ const Navbar = () => {
               return (
                 <Fragment key={item.id}>
                   <li className="cursor-pointer">
-                    <Link
-                      onClick={() => handleMenuActive(item, item.id)}
-                      className={`${
-                        currentPage === item.id ? "font-bold" : ""
-                      }`}
-                      href={`${item.pathname}`}>
-                      {item.title}
+                    <Link href={item.pathname}>
+                      <span
+                        onClick={() => handleMenuActive(item, item.id)}
+                        className={`${
+                          currentPage === item.id ? "font-bold" : ""
+                        }`}>
+                        {item.title}
+                      </span>
                     </Link>
                   </li>
                 </Fragment>
