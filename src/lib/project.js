@@ -1,4 +1,4 @@
-import Quran from "@/assets/quranapp.webp";
+import Quran from "@/assets/quranappcom.webp";
 import Animax from "@/assets/animaxplus.webp";
 import Nimaze from "@/assets/nimaze.webp";
 import Fashion from "@/assets/fashion-shop.webp";

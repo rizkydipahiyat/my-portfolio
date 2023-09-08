@@ -15,7 +15,7 @@ import menu from "@/lib/menu";
 const Navbar = () => {
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState();
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
