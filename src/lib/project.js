@@ -2,6 +2,7 @@ import Quran from "@/assets/quranapp.webp";
 import Animax from "@/assets/animaxplus.webp";
 import Nimaze from "@/assets/nimaze.webp";
 import Fashion from "@/assets/fashion-shop.webp";
+import SPK from "@/assets/spkwsm.webp";
 
 const Projects = [
   {
@@ -35,6 +36,14 @@ const Projects = [
     url: "https://landingpage-fashion.vercel.app/",
     desc: "Fashion Shop merupakan website landing page yang dibangun menggunakan teknologi dari NextJS dan TailwindCSS",
     stack: ["NextJs", "TailwindCSS"],
+  },
+  {
+    id: 5,
+    title: "SPK Menentukan Jasa Pengiriman Barang",
+    image: SPK,
+    url: "https://spkwsm.000webhostapp.com/login",
+    desc: "SPK WSM merupakan project skripsi yang telah diselesaikan menggunakan teknologi Larevel dan MySQL",
+    stack: ["Laravel", "MySQL", "TailwindCSS"],
   },
 ];
 
