@@ -3,6 +3,7 @@ import Animax from "@/assets/animaxplus.webp";
 import Nimaze from "@/assets/nimaze.webp";
 import Fashion from "@/assets/fashion-shop.webp";
 import SPK from "@/assets/spkwsm.webp";
+import Epidemic from "@/assets/epidemic.webp";
 
 const Projects = [
   {
@@ -44,6 +45,14 @@ const Projects = [
     url: "https://spkwsm.000webhostapp.com/login",
     desc: "SPK WSM merupakan project skripsi yang telah diselesaikan menggunakan teknologi Larevel dan MySQL",
     stack: ["Laravel", "MySQL", "TailwindCSS"],
+  },
+  {
+    id: 6,
+    title: "Epidemic Clone Shop",
+    image: Epidemic,
+    url: "https://epidemic-orpin.vercel.app/",
+    desc: "Epidemic Clone merupakan sebuah website cloning dari epidemic.id yang telah terintegrasi pembayaran menggunakan paypal sandbox",
+    stack: ["NextJS", "MongoDB", "ReduxJS", "TailwindCSS", "REST API"],
   },
 ];
 
