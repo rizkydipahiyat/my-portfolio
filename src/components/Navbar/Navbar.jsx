@@ -11,11 +11,13 @@ import { DarkModeContext } from "@/context/DarkModeContext";
 import { VscCode } from "react-icons/vsc";
 import Link from "next/link";
 import menu from "@/lib/menu";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("/");
+  const router = useRouter();
+  const [currentPage, setCurrentPage] = useState("");
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -52,18 +54,16 @@ const Navbar = () => {
               return (
                 <Fragment key={item.id}>
                   <li className="cursor-pointer">
-                    <Link href={item.pathname}>
-                      <span
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleMenuActive(item, item.pathname);
-                        }}
-                        className={`${
-                          currentPage === item.pathname ? "font-bold" : ""
-                        }`}>
-                        {item.title}
-                      </span>
-                    </Link>
+                    <span
+                      onClick={() => {
+                        router.push(`${item.pathname}`);
+                        handleMenuActive(item, item.pathname);
+                      }}
+                      className={`${
+                        currentPage === item.pathname ? "font-bold" : ""
+                      }`}>
+                      {item.title}
+                    </span>
                   </li>
                 </Fragment>
               );
