@@ -54,17 +54,15 @@ const Navbar = () => {
               return (
                 <Fragment key={item.id}>
                   <li className="cursor-pointer">
-                    <span
-                      onClick={(e) => {
-                        e.preventDefault();
-                        router.push(`${item.pathname}`);
-                        handleMenuActive(item, item.pathname);
-                      }}
-                      className={`${
-                        currentPage === item.pathname ? "font-bold" : ""
-                      }`}>
-                      {item.title}
-                    </span>
+                    <Link href={`${item.pathname}`}>
+                      <span
+                        onClick={() => handleMenuActive(item, item.pathname)}
+                        className={`${
+                          currentPage === item.pathname ? "font-bold" : ""
+                        }`}>
+                        {item.title}
+                      </span>
+                    </Link>
                   </li>
                 </Fragment>
               );
