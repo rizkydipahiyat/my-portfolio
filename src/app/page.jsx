@@ -5,41 +5,49 @@ import { DarkModeContext } from "@/context/DarkModeContext";
 import { useContext } from "react";
 import { IoArrowDown } from "react-icons/io5";
 import Projects from "@/lib/project";
+import HeadMeta from "@/lib/HeadMeta";
+import Logo from "@/assets/logo-rda.png";
 
 export default function Home() {
   const { theme } = useContext(DarkModeContext);
   return (
-    <div
-      className={`${
-        theme === "light"
-          ? "bg-zinc-800 text-slate-100"
-          : "bg-zinc-100 text-slate-800"
-      } container mx-auto max-w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5`}>
-      <div className="md:flex items-center md:h-[25rem] h-[15rem]">
-        <div className="md:w-1/2 md:mt-32 md:mb-40 mt-5">
-          <div className="relative md:flex md:flex-col">
-            <span className="text-2xl md:text-4xl font-medium">
-              Hello, I&apos;m
-              <br />
-            </span>
-            <span className="text-2xl md:text-4xl font-medium">
-              Rizky Dipahiyat Alghipari.
-            </span>
-            <span className="absolute -bottom-[10rem] -left-1 md:-bottom-36 md:-left-2">
-              <IoArrowDown size={28} width={38} />
-            </span>
+    <>
+      <HeadMeta
+        ogImageUrl={Logo}
+        metaDescription="Hello, I am Rizky Dipahiyat Alghipari. A fresh computer science graduate who is trying to specialize in frontend & React web development."
+      />
+      <div
+        className={`${
+          theme === "light"
+            ? "bg-zinc-800 text-slate-100"
+            : "bg-zinc-100 text-slate-800"
+        } container mx-auto max-w-full px-3 py-5 md:container md:max-w-full md:px-20 md:py-5`}>
+        <div className="md:flex items-center md:h-[25rem] h-[15rem]">
+          <div className="md:w-1/2 md:mt-32 md:mb-40 mt-5">
+            <div className="relative md:flex md:flex-col">
+              <span className="text-2xl md:text-4xl font-medium">
+                Hello, I&apos;m
+                <br />
+              </span>
+              <span className="text-2xl md:text-4xl font-medium">
+                Rizky Dipahiyat Alghipari.
+              </span>
+              <span className="absolute -bottom-[10rem] -left-1 md:-bottom-36 md:-left-2">
+                <IoArrowDown size={28} width={38} />
+              </span>
+            </div>
+          </div>
+          <div className="md:2/3 md:mt-32 md:mb-40 mt-5">
+            <div className="md:px-5">
+              <span className="md:text-2xl text-md font-light text-justify">
+                A fresh computer science graduate who is trying to specialize in
+                frontend & React web development.
+              </span>
+            </div>
           </div>
         </div>
-        <div className="md:2/3 md:mt-32 md:mb-40 mt-5">
-          <div className="md:px-5">
-            <span className="md:text-2xl text-md font-light text-justify">
-              A final year informatics engineering student trying to specialize
-              in frontend web developer & React.
-            </span>
-          </div>
-        </div>
+        <ProjectCard data={Projects} />
       </div>
-      <ProjectCard data={Projects} />
-    </div>
+    </>
   );
 }
