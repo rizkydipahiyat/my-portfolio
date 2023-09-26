@@ -35,10 +35,10 @@ const About = () => {
               ReactJS.
               <br />
               <br />
-              Currently, I am a final year computer science student at Esa
-              Unggul University, Jakarta. I have internship experience as a
-              front end web developer for 8 months. I used to look for
-              opportunities to further enhance my skills through internships.
+              Currently, I am a fresh graduate of computer science at Esa Unggul
+              University, Jakarta. I have internship experience as a front end
+              web developer for 8 months. I used to look for opportunities to
+              further enhance my skills through internships.
             </p>
             <SkillSoftwareCard />
             <SkillCard />
