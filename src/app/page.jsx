@@ -5,17 +5,52 @@ import { DarkModeContext } from "@/context/DarkModeContext";
 import { useContext } from "react";
 import { IoArrowDown } from "react-icons/io5";
 import Projects from "@/lib/project";
-import HeadMeta from "@/lib/HeadMeta";
-import Logo from "@/assets/logo-rda.png";
+import Head from "next/head";
 
 export default function Home() {
   const { theme } = useContext(DarkModeContext);
   return (
     <>
-      <HeadMeta
-        ogImageUrl={Logo}
-        metaDescription="Hello, I am Rizky Dipahiyat Alghipari. A fresh computer science graduate who is trying to specialize in frontend & React web development."
-      />
+      <Head>
+        <title>Portfolio | Rizky Dipahiyat Alghipari</title>
+        <meta
+          name="description"
+          content={
+            "Hello, I am Rizky Dipahiyat Alghipari. A fresh computer science graduate who is trying to specialize in frontend & React web development."
+          }
+        />
+
+        <meta property="og:url" content="https://hirizky.netlify.app" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Portfolio | Rizky Dipahiyat Alghipari"
+        />
+        <meta
+          property="og:description"
+          content="Hello, I am Rizky Dipahiyat Alghipari. A fresh computer science graduate who is trying to specialize in frontend & React web development."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dtun3i3dj/image/upload/v1695719655/upload/logo-rda_bphalm.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="hirizky.netlify.app" />
+        <meta property="twitter:url" content="https://hirizky.netlify.app" />
+        <meta
+          name="twitter:title"
+          content="Portfolio | Rizky Dipahiyat Alghipari"
+        />
+        <meta
+          name="twitter:description"
+          content="Hello, I am Rizky Dipahiyat Alghipari. A fresh computer science graduate who is trying to specialize in frontend & React web development."
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dtun3i3dj/image/upload/v1695719655/upload/logo-rda_bphalm.png"
+        />
+      </Head>
       <div
         className={`${
           theme === "light"

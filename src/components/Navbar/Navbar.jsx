@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Fragment, useContext, useState } from "react";
+import React, { Fragment, useContext, useEffect, useState } from "react";
 import {
   IoPartlySunnyOutline,
   IoCloudyNight,
@@ -15,15 +15,19 @@ import menu from "@/lib/menu";
 const Navbar = () => {
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState();
+  const [currentPage, setCurrentPage] = useState("");
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleMenuActive = (pathname) => {
-    setCurrentPage(pathname.id);
+    setCurrentPage(pathname.pathname);
   };
+
+  useEffect(() => {
+    setCurrentPage(currentPage);
+  }, [currentPage]);
 
   return (
     <nav
@@ -54,9 +58,9 @@ const Navbar = () => {
                   <li className="cursor-pointer">
                     <Link href={item.pathname}>
                       <span
-                        onClick={() => handleMenuActive(item, item.id)}
+                        onClick={() => handleMenuActive(item, item.pathname)}
                         className={`${
-                          currentPage === item.id ? "font-bold" : ""
+                          currentPage === item.pathname ? "font-bold" : ""
                         }`}>
                         {item.title}
                       </span>
