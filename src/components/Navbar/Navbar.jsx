@@ -55,7 +55,8 @@ const Navbar = () => {
                 <Fragment key={item.id}>
                   <li className="cursor-pointer">
                     <span
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.preventDefault();
                         router.push(`${item.pathname}`);
                         handleMenuActive(item, item.pathname);
                       }}
