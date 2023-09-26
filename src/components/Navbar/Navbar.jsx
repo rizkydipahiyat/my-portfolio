@@ -15,7 +15,7 @@ import menu from "@/lib/menu";
 const Navbar = () => {
   const { theme, toggleDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("/");
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,10 +24,6 @@ const Navbar = () => {
   const handleMenuActive = (pathname) => {
     setCurrentPage(pathname.pathname);
   };
-
-  useEffect(() => {
-    setCurrentPage(currentPage);
-  }, [currentPage]);
 
   return (
     <nav
@@ -58,7 +54,10 @@ const Navbar = () => {
                   <li className="cursor-pointer">
                     <Link href={item.pathname}>
                       <span
-                        onClick={() => handleMenuActive(item, item.pathname)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleMenuActive(item, item.pathname);
+                        }}
                         className={`${
                           currentPage === item.pathname ? "font-bold" : ""
                         }`}>
