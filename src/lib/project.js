@@ -4,6 +4,7 @@ import Nimaze from "@/assets/nimaze.webp";
 import Fashion from "@/assets/fashion-shop.webp";
 import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
+import Advanced from "@/assets/advancefilter.webp";
 
 const Projects = [
   {
@@ -53,6 +54,14 @@ const Projects = [
     url: "https://epidemic-orpin.vercel.app/",
     desc: "Epidemic Clone merupakan sebuah website cloning dari epidemic.id yang telah terintegrasi pembayaran menggunakan paypal sandbox",
     stack: ["NextJS", "MongoDB", "ReduxJS", "TailwindCSS", "REST API"],
+  },
+  {
+    id: 7,
+    title: "Advanced Filter React Typescript🔥",
+    image: Advanced,
+    url: "https://github.com/rizkydipahiyat/advanced-filter",
+    desc: "Advanced Filter sebuah project pribadi untuk melakukan filter suatu product berdasarkan harga, category, pagination dan pencarian",
+    stack: ["React", "Typescript", "TailwindCSS", "REST API", "React Query"],
   },
 ];
 
