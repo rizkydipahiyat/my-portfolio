@@ -1,6 +1,5 @@
 import { DarkModeContext } from "@/context/DarkModeContext";
 import React, { useContext } from "react";
-import Animaxplus from "@/assets/animaxplus.png";
 import Image from "next/image";
 import Link from "next/link";
 
