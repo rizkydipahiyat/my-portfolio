@@ -4,7 +4,7 @@ import Nimaze from "@/assets/nimaze.webp";
 import Fashion from "@/assets/fashion-shop.webp";
 import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
-import Advanced from "@/assets/advancefilter.webp";
+import Advanced from "@/assets/new-portfolio.webp";
 
 const Projects = [
   {
@@ -57,11 +57,18 @@ const Projects = [
   },
   {
     id: 7,
-    title: "Advanced Filter React Typescript🔥",
+    title: "ShopXpress Advanced Filter React Typescript🔥",
     image: Advanced,
-    url: "https://github.com/rizkydipahiyat/advanced-filter",
+    url: "https://shopxpress-advanced-filter.vercel.app/",
     desc: "Advanced Filter sebuah project pribadi untuk melakukan filter suatu product berdasarkan harga, category, pagination dan pencarian",
-    stack: ["React", "Typescript", "TailwindCSS", "REST API", "React Query"],
+    stack: [
+      "React",
+      "Typescript",
+      "TailwindCSS",
+      "REST API",
+      "React Query",
+      "NestJS Typescript",
+    ],
   },
 ];
 
