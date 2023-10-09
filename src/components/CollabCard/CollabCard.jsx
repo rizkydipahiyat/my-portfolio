@@ -22,7 +22,7 @@ const CollabCard = () => {
         <div className="font-normal text-md cursor-pointer">
           <a
             href={
-              "https://drive.google.com/file/d/1XzLoQ9IyEoztFpNWU1l-rVAOR9TFI8Uc/view?usp=sharing"
+              "https://drive.google.com/file/d/1u_pJlbFbhjNY4dbjYOsE3WvgAiM7MDCf/view?usp=sharing"
             }
             target="blank"
             className="border-b-2">
