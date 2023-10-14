@@ -5,6 +5,7 @@ import Fashion from "@/assets/fashion-shop.webp";
 import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
 import Advanced from "@/assets/new-portfolio.webp";
+import JqueryApp from "@/assets/jqueryapp.png";
 
 const Projects = [
   {
@@ -69,6 +70,14 @@ const Projects = [
       "React Query",
       "NestJS Typescript",
     ],
+  },
+  {
+    id: 8,
+    title: "ShopXpress Advanced Filter React Typescript🔥",
+    image: JqueryApp,
+    url: "https://simple-commerce-jquery.netlify.app/",
+    desc: "Jquery Simple Commerce merupakan  project pribadi untuk melakukan tambah data ke cart dan filter suatu product berdasarkan category dan pencarian",
+    stack: ["HTML", "Javascript", "TailwindCSS", "REST API", "JQuery"],
   },
 ];
 

@@ -6,6 +6,8 @@ import Link from "next/link";
 const ProjectCard = ({ data }) => {
   const { theme } = useContext(DarkModeContext);
 
+  const reversedData = [...data].reverse();
+
   return (
     <div
       className={
@@ -13,7 +15,7 @@ const ProjectCard = ({ data }) => {
           ? "bg-zinc-800 text-slate-100"
           : "bg-zinc-100 text-slate-800"
       }>
-      {data.map((project) => {
+      {reversedData.map((project) => {
         return (
           <div key={project.id}>
             <div className="md:flex space-y-5 md:mt-20 mt-5">
