@@ -73,7 +73,7 @@ const Projects = [
   },
   {
     id: 8,
-    title: "ShopXpress Advanced Filter React Typescript🔥",
+    title: "Simple commerce using jquery",
     image: JqueryApp,
     url: "https://simple-commerce-jquery.netlify.app/",
     desc: "Jquery Simple Commerce merupakan  project pribadi untuk melakukan tambah data ke cart dan filter suatu product berdasarkan category dan pencarian",
