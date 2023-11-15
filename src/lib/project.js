@@ -6,6 +6,7 @@ import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
 import Advanced from "@/assets/new-portfolio.webp";
 import JqueryApp from "@/assets/jqueryapp.png";
+import Gramedia from "@/assets/gramedia-clone.png";
 
 const Projects = [
   {
@@ -78,6 +79,14 @@ const Projects = [
     url: "https://simple-commerce-jquery.netlify.app/",
     desc: "Jquery Simple Commerce merupakan  project pribadi untuk melakukan tambah data ke cart dan filter suatu product berdasarkan category dan pencarian",
     stack: ["HTML", "Javascript", "TailwindCSS", "REST API", "JQuery"],
+  },
+  {
+    id: 9,
+    title: "Online Book Store | Gramedia Clone",
+    image: Gramedia,
+    url: "#",
+    desc: "Gramedia Clone merupakan project pribadi untuk melakukan pembelian buku online, pada project yang saya buat kali ini terdapat admin dashboard yang hanya diakses oleh admin, dan tampilan frontend seperti yang ditampilkan, di project ini jika user sudah melakukan pembelian stock pada database akan otomatis berkurang, Project ini terdapat fitur pencarian dan filter product berdasarkan category, max price, min price, dan sorting berdasarkan product terbaru, terpopuler, dan harga terendah hingga tertinggi.",
+    stack: ["Laravel", "Jquery", "TailwindCSS", "MySQL", "Datatables"],
   },
 ];
 
