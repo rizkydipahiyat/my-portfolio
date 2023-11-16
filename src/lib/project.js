@@ -84,7 +84,7 @@ const Projects = [
     id: 9,
     title: "Online Book Store | Gramedia Clone",
     image: Gramedia,
-    url: "#",
+    url: "https://drive.google.com/file/d/1STgsjMb11Y233ZXpDatDZhOOY8qSI_o-/view?usp=sharing",
     desc: "Gramedia Clone merupakan project pribadi untuk melakukan pembelian buku online, pada project yang saya buat kali ini terdapat admin dashboard yang hanya diakses oleh admin, dan tampilan frontend seperti yang ditampilkan, di project ini jika user sudah melakukan pembelian stock pada database akan otomatis berkurang, Project ini terdapat fitur pencarian dan filter product berdasarkan category, max price, min price, dan sorting berdasarkan product terbaru, terpopuler, dan harga terendah hingga tertinggi.",
     stack: ["Laravel", "Jquery", "TailwindCSS", "MySQL", "Datatables"],
   },
