@@ -6,7 +6,7 @@ import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
 import Advanced from "@/assets/new-portfolio.webp";
 import JqueryApp from "@/assets/jqueryapp.png";
-import Gramedia from "@/assets/gramedia-clone.png";
+import Gramedia from "@/assets/anilist.png";
 
 const Projects = [
   {
@@ -87,6 +87,14 @@ const Projects = [
     url: "https://drive.google.com/file/d/1STgsjMb11Y233ZXpDatDZhOOY8qSI_o-/view?usp=sharing",
     desc: "Gramedia Clone merupakan project pribadi untuk melakukan pembelian buku online, pada project yang saya buat kali ini terdapat admin dashboard yang hanya diakses oleh admin, dan tampilan frontend seperti yang ditampilkan, di project ini jika user sudah melakukan pembelian stock pada database akan otomatis berkurang, Project ini terdapat fitur pencarian dan filter product berdasarkan category, max price, min price, dan sorting berdasarkan product terbaru, terpopuler, dan harga terendah hingga tertinggi.",
     stack: ["Laravel", "Jquery", "TailwindCSS", "MySQL", "Datatables"],
+  },
+  {
+    id: 10,
+    title: "Anilist | Anilist Clone",
+    image: Gramedia,
+    url: "https://anilist-cloning.netlify.app/",
+    desc: "Anilist Cloning merupakan project cloning dari Anilist, project ini untuk mendapatkan informasi detail tentang anime, project ini masih dalam progress pengembangan, Teknologi yang digunakan adalah React, Typescript, React Query, Rest API, TailwindCSS.",
+    stack: ["React", "Typescript", "React Query", "Rest API", "TailwindCSS"],
   },
 ];
 
