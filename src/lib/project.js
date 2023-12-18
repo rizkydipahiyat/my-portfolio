@@ -6,7 +6,7 @@ import SPK from "@/assets/spkwsm.webp";
 import Epidemic from "@/assets/epidemic.webp";
 import Advanced from "@/assets/new-portfolio.webp";
 import JqueryApp from "@/assets/jqueryapp.png";
-import Gramedia from "@/assets/anilist.png";
+import Anilist from "@/assets/anilist.png";
 
 const Projects = [
   {
@@ -91,7 +91,7 @@ const Projects = [
   {
     id: 10,
     title: "Anilist | Anilist Clone",
-    image: Gramedia,
+    image: Anilist,
     url: "https://anilist-cloning.netlify.app/",
     desc: "Anilist Cloning merupakan project cloning dari Anilist, project ini untuk mendapatkan informasi detail tentang anime, project ini masih dalam progress pengembangan, Teknologi yang digunakan adalah React, Typescript, React Query, Rest API, TailwindCSS.",
     stack: ["React", "Typescript", "React Query", "Rest API", "TailwindCSS"],
