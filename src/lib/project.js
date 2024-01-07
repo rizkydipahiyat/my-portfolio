@@ -7,6 +7,7 @@ import Epidemic from "@/assets/epidemic.webp";
 import Advanced from "@/assets/new-portfolio.webp";
 import JqueryApp from "@/assets/jqueryapp.png";
 import Anilist from "@/assets/anilist.png";
+import Gramedia from "@/assets/gramedia-clone.png";
 
 const Projects = [
   {
