@@ -8,6 +8,7 @@ import Advanced from "@/assets/new-portfolio.webp";
 import JqueryApp from "@/assets/jqueryapp.png";
 import Anilist from "@/assets/anilist.png";
 import Gramedia from "@/assets/gramedia-clone.png";
+import Tokped from "@/assets/tokped-landing.png";
 
 const Projects = [
   {
@@ -96,6 +97,14 @@ const Projects = [
     url: "https://anilist-cloning.netlify.app/",
     desc: "Anilist Cloning merupakan project cloning dari Anilist, project ini untuk mendapatkan informasi detail tentang anime, project ini masih dalam progress pengembangan, Teknologi yang digunakan adalah React, Typescript, React Query, Rest API, TailwindCSS.",
     stack: ["React", "Typescript", "React Query", "Rest API", "TailwindCSS"],
+  },
+  {
+    id: 11,
+    title: "Tokped Landing Page",
+    image: Tokped,
+    url: "https://tokped-landing.netlify.app/",
+    desc: "Landing Page Tokopedia merupakan tampilan versi web dari tokopedia dibangun menggunakan HTML, CSS, TailwindCSS, dan Javascript",
+    stack: ["HTML", "CSS", "TailwindCSS", "Javascript"],
   },
 ];
 
