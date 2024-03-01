@@ -41,7 +41,7 @@ const ProjectCard = ({ data }) => {
                   </div>
                   <div className="font-medium cursor-pointer">
                     <Link href={`${project.url}`} target="blank">
-                      <span className="border-b-2">See more ↗</span>
+                      <span className="border-b-2">Visit ↗</span>
                     </Link>
                   </div>
                 </div>
